@@ -1,6 +1,6 @@
 #!/bin/python3
 
-from model.motor import Motor
+from motor.model.motor import Motor
 
 class FourWheelDrive:
     def __init__(self, pin_1, pin_2, pin_3, pin_4, pin_5, pin_6, pin_7, pin_8):
