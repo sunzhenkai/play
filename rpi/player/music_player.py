@@ -25,7 +25,7 @@ class MusicPlayer(GamepadCtrl):
                     m = self.medias[self.current % len(self.medias)]
                     self.player.set_media(m)
                     self.player.play()
-                    self.player.audio_set_volume(100)
+                    self.player.audio_set_volume(300)
                     self.current = (self.current + 1) % len(self.medias)
             elif not self.on and self.player.is_playing():
                 self.player.stop()
