@@ -82,6 +82,7 @@ class Gamepad(GamepadCtrl):
             tp = int(event.type)
             val = int(event.value)
             code = int(event.code)
+            print(event)
             # print(tp, val, code, code == 3, tp == 10)
             if tp == 3:
                 if code == 0:
