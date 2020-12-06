@@ -4,7 +4,8 @@ from motor.model.pwm_motor import PWMMotor
 import time
 
 if __name__ == '__main__':
-    drive = PWMMotor(38, 40, 32)
+    drive = PWMMotor(38, 40, 24)
+    # drive = PWMMotor(36, 37, 26)
     drive.stop()
     while True:
         drive.forward(0.25)

@@ -19,17 +19,11 @@ class PWMCar(GamepadCtrl):
 
     def l_joy_x(self, val):
         print('car.x', val)
-        if val < 0:
-            self.drive.turn_left(abs(val))
-        elif val > 0:
-            self.drive.turn_right(abs(val))
+        self.drive.speed_x(val)
 
     def l_joy_y(self, val):
         print('car.y', val)
-        if val < 0:
-            self.drive.forward(abs(val))
-        elif val > 0:
-            self.drive.backward(abs(val))
+        self.drive.speed_y(val)
     
 
 

@@ -44,6 +44,8 @@ class PWMMotor:
         self.set_step(0, 0)
 
     def speed(self, speed=1):
-        duty = int(abs(100 * speed)) 
-        self.set_duty(duty)
+        if speed > 0:
+            self.backward(speed)
+        else:
+            self.forward(abs(speed))
 
